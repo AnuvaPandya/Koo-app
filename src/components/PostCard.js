@@ -24,5 +24,9 @@ export default function PostCard({ title, body }) {
 }
 
 const styles = {
-  containerStyle: { marginLeft: "25%", marginRight: "25%" },
+  containerStyle: {
+    marginLeft: "25%",
+    marginRight: "25%",
+    borderRadius: "50%",
+  },
 };

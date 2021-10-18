@@ -1,8 +1,8 @@
-import { grey } from "@mui/material/colors";
 import React from "react";
 import { useState, useEffect } from "react";
 import PostCard from "./components/PostCard";
 import { POSTS_URL } from "./constants/globalConstants";
+import "./FetchPosts.css";
 
 function FetchPosts() {
   const [posts, setPosts] = useState([]);
@@ -13,15 +13,15 @@ function FetchPosts() {
       .then((result) => setPosts(result.data));
   }, []);
 
-  useEffect(() => {
-    console.log(posts);
-  }, [posts]);
+  //   useEffect(() => {
+  //     console.log(posts);
+  //   }, [posts]);
 
   return (
     <div>
       {posts.map((post) => {
         return (
-          <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+          <div className="container">
             <PostCard title={post.title} body={post.body} />
           </div>
         );

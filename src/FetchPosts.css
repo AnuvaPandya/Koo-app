@@ -1,4 +1,12 @@
-.postContainer {
-  margin-top: "20px";
-  margin-bottom: "20px";
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  /* -webkit-transition: $transition; */
+  /* transition: $transition; */
+}
+
+.container:hover {
+  /* -webkit-transform: scale(1.05, 1.05); */
+  transform: scale(1.05, 1.05);
 }
