@@ -27,6 +27,5 @@ const styles = {
   containerStyle: {
     marginLeft: "25%",
     marginRight: "25%",
-    borderRadius: "50%",
   },
 };

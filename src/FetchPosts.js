@@ -13,9 +13,6 @@ function FetchPosts() {
       .then((result) => setPosts(result.data));
   }, []);
 
-  //   useEffect(() => {
-  //     console.log(posts);
-  //   }, [posts]);
 
   return (
     <div>
